@@ -7,6 +7,7 @@
 .body {
   min-height: 100vh;
   font-family: Nunito;
+  color: $font-color;
 }
 
 .welcome {
@@ -16,7 +17,6 @@
   justify-content: center;
   align-items: center;
   padding: 16px;
-  color: $font-color;
   font-style: normal;
   line-height: 32px;
   margin: 16px 0;
@@ -102,9 +102,8 @@
 
 .skill-list {
   align-self: flex-start;
-  color: $light-blue;
+  color: $list-color;
   line-height: 24px;
-
 
   &--knowledge {
     list-style-image: url(/public/tick-green.png);
@@ -112,5 +111,84 @@
 
   &--know {
     list-style-image: url(/public/tick-lightgreen.png);
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__header {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 8px;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $list-color;
+  min-height: 320px;
+
+  &__header {
+    margin: 64px 0;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  &__description {
+    text-align: center;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0 16px;
+  }
+
+  &__mail {
+    background-color: $link;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 4px 24px;
+    border-radius: 64px;
+    font-size: 16px;
+    margin-bottom: 80px;
+    line-height: 32px;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 64px 0;
+
+  &-box {
+    width: 48px;
+    height: 48px;
+    margin: 0 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 12px -6px $font-color;
+    
+    &__icon {
+      width: 50%;
+      align-self: center;
+      filter: invert(58%) sepia(20%) saturate(4205%) hue-rotate(189deg) brightness(103%) contrast(104%);
+    }
   }
 }
