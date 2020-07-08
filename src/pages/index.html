@@ -22,62 +22,72 @@
   <body class="body">
     <main class="main">
       <header class="welcome">
-
         <div class="welcome__image-container">
-          <img src="../assets/img/me.jpg" alt="Jonasz photo" class="welcome__image" />
+          <img
+            src="../assets/img/me.jpg"
+            alt="Jonasz photo"
+            class="welcome__image"
+          />
           <span class="welcome__bubble">
-            <p class="welcome__hello">Hello! <span class="hand">👋</span></p></span>
+            <p class="welcome__hello">
+              Hello! <span class="hand">👋</span>
+            </p></span
+          >
         </div>
-
-        <h1 class="welcome__header">
-          Hello! My name is Jonasz and I welcome you to my website! I'm an
-          aspiring
-          <span class="welcome__header--distinction">Frontend developer</span>
-          and curious about artificial intelligence.
-        </h1>
-        <p class="welcome__description">
-          On this page you can check what
-          <a href="#skills" class="welcome__description--link">I can do</a>,
-          what I'm currently learning and what I would like to learn more. Check
-          also the
-          <a href="#projects" class="welcome__description--link">projects</a>
-          I've done so far. I'm open to news, so please feel free to
-          <a href="#contact" class="welcome__description--link">contact me</a
-          >.😊
-        </p>
-        <a href="mailto:schier-jonasz@gmail.com" class="welcome__mail"
-          >schier-jonasz@gmail.com</a
-        >
+        <div class="welcome__description-container">
+          <h1 class="welcome__header">
+            Hello! My name is Jonasz and I welcome you to my website! I'm an
+            aspiring
+            <span class="welcome__header--distinction">Frontend developer</span>
+            and curious about artificial intelligence.
+          </h1>
+          <p class="welcome__paragraph">
+            On this page you can check what
+            <a href="#skills" class="welcome__paragraph--link">I can do</a>,
+            what I'm currently learning and what I would like to learn more.
+            Check also the
+            <a href="#projects" class="welcome__paragraph--link">projects</a>
+            I've done so far. I'm open to news, so please feel free to
+            <a href="#contact" class="welcome__paragraph--link">contact me</a
+            >.😊
+          </p>
+        </div>
+          <a href="mailto:schier-jonasz@gmail.com" class="welcome__mail"
+            >schier-jonasz@gmail.com</a
+          >
+        
       </header>
       <section class="skills" id="skills">
         <h2 class="skills__header">My skills</h2>
-        <article class="skill-box">
-          <p class="skill-box__emoji">💪</p>
-          <h3 class="skill-box__title">Working knowledge</h3>
-          <ul class="skill-list skill-list--knowledge">
-            <li class="skill-list__item">xxx</li>
-            <li class="skill-list__item">xxx</li>
-            <li class="skill-list__item">xxx</li>
-          </ul>
-        </article>
-        <article class="skill-box">
-          <p class="skill-box__emoji">🤔</p>
-          <h3 class="skill-box__title">Know something about</h3>
-          <ul class="skill-list skill-list--want-know">
-            <li class="skill-list__item">xxx</li>
-            <li class="skill-list__item">xxx</li>
-            <li class="skill-list__item">xxx</li>
-          </ul>
-        </article>
-        <article class="skill-box">
-          <p class="skill-box__emoji">🎓</p>
-          <h3 class="skill-box__title">Want to learn</h3>
-          <ul class="skill-list">
-            <li class="skill-list__item">xxx</li>
-            <li class="skill-list__item">xxx</li>
-            <li class="skill-list__item">xxx</li>
-          </ul>
-        </article>
+        <div class="skills__grid">
+          <article class="skill-box">
+            <p class="skill-box__emoji">💪</p>
+            <h3 class="skill-box__title">Working knowledge</h3>
+            <ul class="skill-list skill-list--knowledge">
+              <li class="skill-list__item">xxx</li>
+              <li class="skill-list__item">xxx</li>
+              <li class="skill-list__item">xxx</li>
+            </ul>
+          </article>
+          <article class="skill-box">
+            <p class="skill-box__emoji">🤔</p>
+            <h3 class="skill-box__title">Know something about</h3>
+            <ul class="skill-list skill-list--want-know">
+              <li class="skill-list__item">xxx</li>
+              <li class="skill-list__item">xxx</li>
+              <li class="skill-list__item">xxx</li>
+            </ul>
+          </article>
+          <article class="skill-box">
+            <p class="skill-box__emoji">🎓</p>
+            <h3 class="skill-box__title">Want to learn</h3>
+            <ul class="skill-list">
+              <li class="skill-list__item">xxx</li>
+              <li class="skill-list__item">xxx</li>
+              <li class="skill-list__item">xxx</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <section class="projects">
@@ -93,11 +103,12 @@
               <span class="project__circle"></span>
               <span class="project__circle"></span>
             </div>
-            
+
             <div class="project__content">
-              <img src="../assets/img/github.png" alt="">
+              <img src="../assets/img/github.png" alt="" />
               <h3 class="project__title project__grid">
-                <span class="project__label">project:</span> <span>podlaski git</span>
+                <span class="project__label">project:</span>
+                <span>podlaski git</span>
               </h3>
               <p class="project__grid">
                 <span class="project__label">description:</span>
@@ -105,11 +116,19 @@
               </p>
               <p class="project__grid">
                 <span class="project__label">demo:</span>
-                <span><a href="#" class="project__link" title="podlaski git - demo">&lt;see_here&gt;</a></span>
+                <span
+                  ><a href="#" class="project__link" title="podlaski git - demo"
+                    >&lt;see_here&gt;</a
+                  ></span
+                >
               </p>
               <p class="project__grid">
                 <span class="project__label">github:</span>
-                <span><a href="#" class="project__link" title="podlaski git - code">&lt;source_code&gt;</a></span>
+                <span
+                  ><a href="#" class="project__link" title="podlaski git - code"
+                    >&lt;source_code&gt;</a
+                  ></span
+                >
               </p>
             </div>
           </article>
@@ -119,11 +138,12 @@
               <span class="project__circle"></span>
               <span class="project__circle"></span>
             </div>
-            
+
             <div class="project__content">
-              <img src="../assets/img/github.png" alt="">
+              <img src="../assets/img/github.png" alt="" />
               <h3 class="project__title project__grid">
-                <span class="project__label">project:</span> <span>podlaski git</span>
+                <span class="project__label">project:</span>
+                <span>podlaski git</span>
               </h3>
               <p class="project__grid">
                 <span class="project__label">description:</span>
@@ -131,11 +151,19 @@
               </p>
               <p class="project__grid">
                 <span class="project__label">demo:</span>
-                <span><a href="#" class="project__link" title="podlaski git - demo">&lt;see_here&gt;</a></span>
+                <span
+                  ><a href="#" class="project__link" title="podlaski git - demo"
+                    >&lt;see_here&gt;</a
+                  ></span
+                >
               </p>
               <p class="project__grid">
                 <span class="project__label">github:</span>
-                <span><a href="#" class="project__link" title="podlaski git - code">&lt;source_code&gt;</a></span>
+                <span
+                  ><a href="#" class="project__link" title="podlaski git - code"
+                    >&lt;source_code&gt;</a
+                  ></span
+                >
               </p>
             </div>
           </article>
@@ -148,7 +176,10 @@
         </p>
         <div class="social-media">
           <a href="https://github.com/schier-jonasz" class="social-media-box">
-            <img src="../assets/img/github-icon.png" class="social-media-box__icon" />
+            <img
+              src="../assets/img/github-icon.png"
+              class="social-media-box__icon"
+            />
           </a>
           <a href="https://instagram.com/jon_schier" class="social-media-box">
             <img

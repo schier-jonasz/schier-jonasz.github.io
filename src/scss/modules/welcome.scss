@@ -5,12 +5,15 @@
   align-items: center;
   padding: 32px 16px;
   font-style: normal;
-  line-height: 32px;
   margin: 32px 0;
 
   @media (min-width: $tablet) {
     max-width: 768px;
     margin: 64px auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 100%;
   }
 
   &__bubble {
@@ -26,6 +29,7 @@
     background-position: top center;
     border: 12px solid $list-color;
     border-radius: 50%;
+    margin: 16px 0;
 
     @media (min-width: $desktop) {
       height: 178px;
@@ -72,7 +76,7 @@
     }
   }
 
-  &__description {
+  &__paragraph {
     font-weight: 300;
     font-size: 16px;
     text-align: center;
@@ -92,6 +96,37 @@
     padding: 4px 24px;
     border-radius: 64px;
     font-size: 16px;
+    line-height: 32px;
+  }
+
+  &__description-container {
+    text-align: center;
+    line-height: 32px;
+
+    @media (min-width: $desktop) {
+      max-width: 786px;
+      margin: 0 auto;
+      position: relative;
+
+      &::before, &::after {
+        width: 83px;
+        height: 255px;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+      }
+
+      &::before {
+        background: url('../assets/img/left-bracket.svg');
+        right: 100%;
+      }
+
+      &::after {
+        background: url('../assets/img/right-bracket.svg');
+        left: 100%;
+      }
+    }
   }
 }
 
