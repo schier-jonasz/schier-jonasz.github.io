@@ -9,6 +9,11 @@
     &__header {
       font-size: 36px;
       font-weight: bold;
+
+      @media (min-width: $desktop) {
+        font-size: 48px;
+        line-height: 56px;
+      }
     }
   
     &__description {
@@ -16,6 +21,12 @@
       font-weight: 300;
       line-height: 32px;
       text-align: center;
+      max-width: 786px;
+
+      @media (min-width: $desktop) {
+        font-size: 20px;
+        line-height: 40px;
+      }
     }
   }
 
@@ -30,6 +41,12 @@
     font-style: normal;
     line-height: 24px;
     margin: 16px 0;
+    max-width: 600px;
+
+    @media (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 24px;
+    }
 
     &__circle {
       display: block;
@@ -51,6 +68,10 @@
 
     &__content {
       padding: 24px 16px;
+
+      @media (min-width: $desktop) {
+        padding: 24px 48px;
+      }
     }
 
     &__label {
@@ -64,6 +85,10 @@
       display: grid;
       grid-template-columns: 102px 1fr;
       column-gap: 8px;
+
+      @media (min-width: $desktop) {
+        grid-template-columns: 116px 1fr;
+      }
     }
 
     &__title {
@@ -72,6 +97,11 @@
       line-height: 24px;
       font-weight: bold;
       color: #fff;
+
+      @media (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
 
     &__link {
