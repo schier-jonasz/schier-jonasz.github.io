@@ -49,11 +49,16 @@
       display: flex;
       justify-content: center;
       box-shadow: 0 4px 12px -6px $font-color;
+
+      &:hover &__icon {
+        transform: scale(1.15);
+      }
       
       &__icon {
         width: 50%;
         align-self: center;
         filter: invert(58%) sepia(20%) saturate(4205%) hue-rotate(189deg) brightness(103%) contrast(104%);
+        transition: transform 0.3s linear;
       }
     }
   }

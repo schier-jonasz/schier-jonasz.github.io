@@ -29,6 +29,7 @@
     font-family: Roboto Mono;
     font-style: normal;
     line-height: 24px;
+    margin: 16px 0;
 
     &__circle {
       display: block;
@@ -75,6 +76,16 @@
 
     &__link {
       color: $light-blue;
+    }
+  }
+
+  .projects-grid {
+    display: grid;
+    column-gap: 24px;
+    row-gap: 24px;
+
+    @media (min-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
     }
   }
   

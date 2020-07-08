@@ -22,10 +22,13 @@
   <body class="body">
     <main class="main">
       <header class="welcome">
-        <div class="welcome-box">
-          <img src="../assets/img/me.jpg" alt="picture of me" class="welcome-box__image" />
-          <p class="welcome-box__hello">Hello! 👋</p>
+
+        <div class="welcome__image-container">
+          <img src="../assets/img/me.jpg" alt="Jonasz photo" class="welcome__image" />
+          <span class="welcome__bubble">
+            <p class="welcome__hello">Hello! <span class="hand">👋</span></p></span>
         </div>
+
         <h1 class="welcome__header">
           Hello! My name is Jonasz and I welcome you to my website! I'm an
           aspiring
@@ -84,6 +87,32 @@
           list of projects is still small. I hope it's only a matter of time! 💪
         </p>
         <div class="projects-grid">
+          <article class="project">
+            <div class="project__window">
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+            </div>
+            
+            <div class="project__content">
+              <img src="../assets/img/github.png" alt="">
+              <h3 class="project__title project__grid">
+                <span class="project__label">project:</span> <span>podlaski git</span>
+              </h3>
+              <p class="project__grid">
+                <span class="project__label">description:</span>
+                <span>podlsakie aliasy dla gitowych komend</span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">demo:</span>
+                <span><a href="#" class="project__link" title="podlaski git - demo">&lt;see_here&gt;</a></span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">github:</span>
+                <span><a href="#" class="project__link" title="podlaski git - code">&lt;source_code&gt;</a></span>
+              </p>
+            </div>
+          </article>
           <article class="project">
             <div class="project__window">
               <span class="project__circle"></span>
