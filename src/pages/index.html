@@ -22,7 +22,10 @@
   <body class="body">
     <main class="main">
       <header class="welcome">
-        <img src="../assets/img/me.jpg" alt="picture of me" class="welcome__image" />
+        <div class="welcome-box">
+          <img src="../assets/img/me.jpg" alt="picture of me" class="welcome-box__image" />
+          <p class="welcome-box__hello">Hello! 👋</p>
+        </div>
         <h1 class="welcome__header">
           Hello! My name is Jonasz and I welcome you to my website! I'm an
           aspiring
@@ -57,7 +60,7 @@
         <article class="skill-box">
           <p class="skill-box__emoji">🤔</p>
           <h3 class="skill-box__title">Know something about</h3>
-          <ul class="skill-list skill-list--know">
+          <ul class="skill-list skill-list--want-know">
             <li class="skill-list__item">xxx</li>
             <li class="skill-list__item">xxx</li>
             <li class="skill-list__item">xxx</li>
@@ -81,20 +84,31 @@
           list of projects is still small. I hope it's only a matter of time! 💪
         </p>
         <div class="projects-grid">
-          <article>
-            <h3><span>project</span> <span>podlaski git</span></h3>
-            <p>
-              <span>description:</span>
-              <span>podlsakie aliasy dla gitowych komend</span>
-            </p>
-            <p>
-              <span>demo:</span>
-              <span><a href="#" title="podlaski git - demo">&lt;see_here&gt;</a></span>
-            </p>
-            <p>
-              <span>github:</span>
-              <span><a href="#" title="podlaski git - code">&lt;source_code&gt;</a></span>
-            </p>
+          <article class="project">
+            <div class="project__window">
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+            </div>
+            
+            <div class="project__content">
+              <img src="../assets/img/github.png" alt="">
+              <h3 class="project__title project__grid">
+                <span class="project__label">project:</span> <span>podlaski git</span>
+              </h3>
+              <p class="project__grid">
+                <span class="project__label">description:</span>
+                <span>podlsakie aliasy dla gitowych komend</span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">demo:</span>
+                <span><a href="#" class="project__link" title="podlaski git - demo">&lt;see_here&gt;</a></span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">github:</span>
+                <span><a href="#" class="project__link" title="podlaski git - code">&lt;source_code&gt;</a></span>
+              </p>
+            </div>
           </article>
         </div>
       </section>

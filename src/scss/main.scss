@@ -1,194 +1,24 @@
 @import "~normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;700&display=swap');
 
 @import "_variables";
-@import "modules/hello.scss";
+
+@import "modules/welcome.scss";
+@import "modules/skills.scss";
+@import "modules/projects.scss";
+@import "modules/contact.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 .body {
   min-height: 100vh;
   font-family: Nunito;
   color: $font-color;
-}
-
-.welcome {
-  max-height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  font-style: normal;
-  line-height: 32px;
-  margin: 16px 0;
-
-  &__image {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    background-position: top center;
-    border-radius: 50%;
-  }
-
-  &__header {
-    font-weight: bold;
-    font-size: 26px;
-    text-align: center;
-
-    &--distinction {
-      color: $nice-blue;
-    }
-  }
-
-  &__description {
-    font-weight: 300;
-    font-size: 16px;
-    text-align: center;
-
-    &--link {
-      text-decoration: none;
-      font-weight: bold;
-      color: $link;
-    }
-  }
-
-  &__mail {
-    background-color: $link;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 4px 24px;
-    border-radius: 64px;
-    font-size: 16px;
-  }
-}
-
-.skills {
-  background-color: $nice-blue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  &__header {
-    color: #fff;
-    font-weight: bold;
-    font-size: 36px;
-    margin: 72px 0;
-  }
-}
-
-.skill-box {
-  min-width: 288px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 32px 0;
-
-  &__emoji {
-    font-size: 64px;
-    line-height: 72px;
-    margin: 0;
-  }
-
-  &__title {
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
-    margin: 0;
-    line-height: 44px;
-  }
-}
-
-.skill-list {
-  align-self: flex-start;
-  color: $list-color;
-  line-height: 24px;
-
-  &--knowledge {
-    list-style-image: url(../assets/img/tick-green.png);
-  }
-
-  &--know {
-    list-style-image: url(../assets/img/tick-lightgreen.png);
-  }
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  &__header {
-    font-size: 36px;
-    font-weight: bold;
-  }
-
-  &__description {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 32px;
-    text-align: center;
-    margin: 0 8px;
-  }
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $list-color;
-  min-height: 320px;
-
-  &__header {
-    margin: 64px 0;
-    font-size: 36px;
-    font-weight: bold;
-  }
-
-  &__description {
-    text-align: center;
-    font-weight: 300;
-    line-height: 32px;
-    margin: 0 16px;
-  }
-
-  &__mail {
-    background-color: $link;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 4px 24px;
-    border-radius: 64px;
-    font-size: 16px;
-    margin-bottom: 80px;
-    line-height: 32px;
-  }
-}
-
-.social-media {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 64px 0;
-
-  &-box {
-    width: 48px;
-    height: 48px;
-    margin: 0 12px;
-    border-radius: 50%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 4px 12px -6px $font-color;
-    
-    &__icon {
-      width: 50%;
-      align-self: center;
-      filter: invert(58%) sepia(20%) saturate(4205%) hue-rotate(189deg) brightness(103%) contrast(104%);
-    }
-  }
 }

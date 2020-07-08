@@ -1,0 +1,53 @@
+.skills {
+    background-color: $nice-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+  
+    &__header {
+      color: #fff;
+      font-weight: bold;
+      font-size: 36px;
+      margin: 72px 0;
+    }
+  }
+  
+  .skill-box {
+    min-width: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+  
+    &__emoji {
+      font-size: 64px;
+      line-height: 72px;
+      margin: 0;
+    }
+  
+    &__title {
+      color: #fff;
+      font-weight: bold;
+      font-size: 24px;
+      margin: 0;
+      line-height: 44px;
+    }
+  }
+  
+  .skill-list {
+    align-self: flex-start;
+    color: $list-color;
+    line-height: 24px;
+    font-style: normal;
+
+    &--knowledge {
+      list-style-image: url(../assets/img/tick-green.png);
+    }
+  
+    &--want-know {
+      list-style-image: url(../assets/img/tick-lightgreen.png);
+    }
+  }
