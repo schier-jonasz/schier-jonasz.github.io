@@ -1,64 +1,90 @@
-
 .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $list-color;
+  min-height: 320px;
+
+  &__header {
+    margin: 64px 0;
+    font-size: 36px;
+    font-weight: bold;
+
+    @media (min-width: $desktop) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    margin: 0 16px;
+
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+
+  &__mail {
+    background-color: $link;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 64px;
+    font-size: 16px;
+    padding: 10px 24px;
+
+    @media (min-width: $desktop) {
+      height: 100%;
+    }
+  }
+
+  &__links {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    min-height: 160px;
     align-items: center;
-    background-color: $list-color;
-    min-height: 320px;
-  
-    &__header {
-      margin: 64px 0;
-      font-size: 36px;
-      font-weight: bold;
-    }
-  
-    &__description {
-      text-align: center;
-      font-weight: 300;
-      line-height: 32px;
-      margin: 0 16px;
-    }
-  
-    &__mail {
-      background-color: $link;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      padding: 4px 24px;
-      border-radius: 64px;
-      font-size: 16px;
-      margin-bottom: 80px;
-      line-height: 32px;
-    }
-  }
-  
-  .social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     margin: 64px 0;
-  
-    &-box {
-      width: 48px;
-      height: 48px;
-      margin: 0 12px;
-      border-radius: 50%;
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      box-shadow: 0 4px 12px -6px $font-color;
 
-      &:hover &__icon {
-        transform: scale(1.15);
-      }
-      
-      &__icon {
-        width: 50%;
-        align-self: center;
-        filter: invert(58%) sepia(20%) saturate(4205%) hue-rotate(189deg) brightness(103%) contrast(104%);
-        transition: transform 0.3s linear;
-      }
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 580px;
+      margin: 64px 0;
     }
   }
+}
+
+.social-media {
+  display: flex;
+
+  &-box {
+    width: 48px;
+    height: 48px;
+    margin: 0 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 12px -6px $font-color;
+
+    &:hover &__icon {
+      transform: scale(1.15);
+    }
+
+    &__icon {
+      width: 50%;
+      align-self: center;
+      filter: invert(58%) sepia(20%) saturate(4205%) hue-rotate(189deg)
+        brightness(103%) contrast(104%);
+      transition: transform 0.3s linear;
+    }
+  }
+}
