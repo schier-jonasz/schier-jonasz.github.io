@@ -22,7 +22,7 @@
       @media (min-width: $desktop) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 16px;
+        column-gap: 64px;
       }
     }
   }
@@ -53,7 +53,7 @@
   .skill-list {
     align-self: flex-start;
     color: $list-color;
-    line-height: 24px;
+    line-height: 42px;
     font-style: normal;
 
     &--knowledge {
