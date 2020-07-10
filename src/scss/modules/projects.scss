@@ -64,8 +64,8 @@
       align-items: center;
       height: 40px;
       background-color: $projectHeader;
-      border-radius: 16px;
       padding-left: 16px;
+      overflow: hidden;
     }
 
     &__content {
